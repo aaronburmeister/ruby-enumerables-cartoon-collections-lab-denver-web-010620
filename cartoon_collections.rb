@@ -20,9 +20,5 @@ end
 def find_the_cheese(list)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  # searches given list for matching cheeses; changes array to true/false values
   list.detect {|x| cheese_types.include?(x)}
 end
-
-example = ["crackers", "tomatoes", "peppers", "potatoes", "gouda"]
-puts find_the_cheese(example)
