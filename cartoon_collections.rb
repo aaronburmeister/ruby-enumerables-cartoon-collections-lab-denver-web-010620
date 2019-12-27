@@ -24,13 +24,13 @@ def find_the_cheese(list)# code an argument here
   cheese_presence = cheese_types.map {|x| list.include?(x)}
   # if any of the values in cheese presence are true, find cheese
   if cheese_presence.reduce {|x, y| x || y}
-    puts "There is cheese in this list #{cheese_types}"
     return list.detect {|x| cheese_types.include?(x)}
   else
-    puts "No cheese, I'm afraid!"
     return nil
   end
 end
 
 example = ["crackers", "tomatoes", "cheddar", "peppers", "potatoes"]
-puts find_the_cheese(example)
+cheese_types = ["cheddar", "gouda", "camembert"]
+#puts find_the_cheese(example)
+example.detect {|x| cheese_types.include?(x)}
