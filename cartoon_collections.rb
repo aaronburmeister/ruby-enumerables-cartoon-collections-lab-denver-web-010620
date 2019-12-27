@@ -25,7 +25,7 @@ def find_the_cheese(list)# code an argument here
   # if any of the values in cheese presence are true, find cheese
   if cheese_presence.reduce {|x, y| x || y}
     puts "There is cheese in this list"
-    list.index
+    return list.index(cheese_types.each)
   else
     puts "No cheese, I'm afraid!"
     return nil
