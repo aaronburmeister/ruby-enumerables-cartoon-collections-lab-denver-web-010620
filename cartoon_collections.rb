@@ -28,5 +28,5 @@ def find_the_cheese(list)# code an argument here
   end
 end
 
-example = ["crackers", "tomatoes", "peppers", "potatoes"]
+example = ["crackers", "tomatoes", "cheddar", "peppers", "potatoes"]
 puts find_the_cheese(example)
