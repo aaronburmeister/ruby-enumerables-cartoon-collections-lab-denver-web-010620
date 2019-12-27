@@ -1,16 +1,24 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(dwarf_array)# code an argument here
+  dwarf_array.each_with_index {|dwarf, index| puts "#{index + 1}. #{dwarf}"}
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls)# code an argument here
+  calls.map {|word| "#{word.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)# code an argument here
+  # map array to true/false statements; true if word > 4, false if word 4 or less
+  calls = calls.map {|x| x.length > 4}
+  # if there are any true values, return true, otherwise return false
+  if calls.reduce {|x, y| x || y}
+    return true
+  else
+    return false
+  end
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(list)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  list.detect {|x| cheese_types.include?(x)}
 end
