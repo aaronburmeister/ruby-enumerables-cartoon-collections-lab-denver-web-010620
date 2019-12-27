@@ -20,7 +20,7 @@ end
 def find_the_cheese(list)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if list.include?(cheese_types.each)
+  if cheese_types.each {|x| list.include?(x)}
     return "There is cheese in this list"
   else
     return "No cheese, I'm afraid!"
