@@ -33,4 +33,4 @@ end
 example = ["crackers", "tomatoes", "cheddar", "peppers", "potatoes"]
 cheese_types = ["cheddar", "gouda", "camembert"]
 #puts find_the_cheese(example)
-example.detect {|x| cheese_types.include?(x)}
+puts example.detect {|x| cheese_types.include?(x)}
