@@ -24,5 +24,5 @@ def find_the_cheese(list)# code an argument here
   list.detect {|x| cheese_types.include?(x)}
 end
 
-example = ["crackers", "tomatoes", "cheddar", "peppers", "potatoes"]
+example = ["crackers", "tomatoes", "cheddar", "peppers", "potatoes", "gouda"]
 puts find_the_cheese(example)
