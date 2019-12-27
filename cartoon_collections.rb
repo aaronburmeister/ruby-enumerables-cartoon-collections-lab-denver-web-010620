@@ -22,10 +22,11 @@ def find_the_cheese(list)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_presence = cheese_types.map {|x| list.include?(x)}
   if cheese_presence.reduce {|x, y| x || y}
-    return "There is cheese in this list"
+    puts "There is cheese in this list"
     
   else
-    return "No cheese, I'm afraid!"
+    puts "No cheese, I'm afraid!"
+    return nil
   end
 end
 
