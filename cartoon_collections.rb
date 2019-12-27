@@ -24,7 +24,7 @@ def find_the_cheese(list)# code an argument here
   cheese_presence = cheese_types.map {|x| list.include?(x)}
   # if any of the values in cheese presence are true, find cheese
   if cheese_presence.reduce {|x, y| x || y}
-    puts "There is cheese in this list"
+    puts "There is cheese in this list #{cheese_types.each}"
     return list.index(cheese_types.each)
   else
     puts "No cheese, I'm afraid!"
