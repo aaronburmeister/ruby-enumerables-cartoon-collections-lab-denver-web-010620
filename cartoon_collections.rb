@@ -20,8 +20,8 @@ end
 def find_the_cheese(list)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_presence = cheese_types.map {|x| x.length > 4}
-  if cheese_types.each {|x| list.include?(x)}
+  cheese_presence = cheese_types.map {|x| list.include?(x)}
+  if cheese_presence.reduce {|x, y| x || y}
     return "There is cheese in this list"
   else
     return "No cheese, I'm afraid!"
